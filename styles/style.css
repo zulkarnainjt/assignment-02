@@ -126,7 +126,7 @@
 
 .section-2{
     margin: 5%;
-    background-image: url("/assets/bg.png");
+    background-image: url(../assets/bg.png);
     background-repeat: no-repeat;
 }
 
@@ -220,7 +220,7 @@
 /* section-3 style */
 
 .section-3{
-    background-image: url("/assets/bg.png"), linear-gradient(to bottom, white, rgb(223, 197, 146));
+    background-image: url(../assets/bg.png), linear-gradient(to bottom, white, rgb(223, 197, 146));
     background-position: center;
     padding-left: 140px;
     padding-right: 140px;
