@@ -1,5 +1,8 @@
 /* Navbar Style */
-
+*{
+    margin: 0;
+    padding: 0;
+}
 .navbar{
     display: flex;
     justify-content: space-around;
@@ -33,6 +36,12 @@
     font-size: 24px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     cursor: pointer;
+}
+.nav_menu{
+    position: relative;
+}
+.responsive_menu{
+    visibility: hidden;
 }
 
 .anchor>a:hover{
@@ -111,6 +120,7 @@
 }
 
 #image{
+    /* width: 100%; */
     margin-right: 141px;
 }
 
@@ -393,4 +403,84 @@
 .footer_title>h3{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
+}
+
+/* Responsive style */
+
+@media screen and (max-width: 576px) {
+    .navbar{
+        width: 100%;
+        border-bottom: 1px solid tomato;
+        padding-bottom: 10px;
+        justify-content: space-between;
+    }
+    .anchor, .nav-btn, .nav-logo>h2{
+        display: none;
+    }
+    .responsive_menu{
+        visibility: visible;
+        font-size: 40px;
+        padding-right: 10px;
+    }
+    .banner-content{
+        flex-direction: column-reverse;
+        width: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #image > img{
+        width: 100%;
+        padding-left: 10px;
+    }
+    #image{
+        margin: 0;
+    }
+    .banner-title{
+        font-size: 32px;
+        width: 100%;
+    }
+    .banner{
+        margin: 0 0;
+    }
+    .container{
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin: 0;
+    }
+    .card{
+        width: 280px;
+        margin: 0 auto;
+    }
+    .section-icon{
+        display: none;
+    }
+    .section-3-title{
+        font-size: 23px;
+    }
+    .collage{
+        display: none;
+    }
+    .section-3-collage{
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+    }
+    .section-3{
+        padding: 0;
+    }
+    .btn-2{
+        margin-left: 28%;
+    }
+    .end{
+        flex-direction: column;
+        height: auto;
+        align-items: start;
+        padding-left: 10px;
+        gap: 25px;
+        
+    }
+
+    .flex-description > p{
+justify-content: center;
+    }
 }
