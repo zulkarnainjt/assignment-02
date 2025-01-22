@@ -79,7 +79,7 @@
 
 .banner{
     margin-left: 141px;
-    margin-right: 110px;
+    margin-right: 200px;
     margin-bottom: 200px;
     margin-top: 50px;
 }
@@ -120,7 +120,9 @@
     color: rgb(32, 32, 32);
 }
 .section-2{
-    /* margin: 5%; */
+    margin: 5%;
+    background-image: url(/assets/bg.png);
+    background-repeat: no-repeat;
 }
 .container{
     margin: 5%;
@@ -130,7 +132,7 @@
 }
 .container>:nth-child(1){
     border: 1px solid #DEF5FF;
-    background-image: linear-gradient(to top, white, rgba(222, 245, 255, 1)); 
+    background-image: linear-gradient(rgba(222, 245, 255, 1), rgba(255, 255, 255, 1)); 
 }
 .container>:nth-child(2){
     background-image: linear-gradient(to top, white, rgba(255, 244, 220, 1));
@@ -175,3 +177,33 @@
 .card, .a3{
     color: #8e10fc;
 }
+
+.section-icon{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+#icon-1{
+    color: white;
+    border-radius: 100%;
+    padding: 20px;
+    background-color: black;
+}
+#icon-2{
+    color: white;
+    padding: 20px;
+    border-radius: 100%;
+    background-color: black;
+}
+#icon-1:hover{
+    color: black;
+    background-color: #F2E8FF;
+    border: 1px solid grey;
+}
+#icon-2:hover{
+    color: black;
+    background-color: #F2E8FF;
+    border: 1px solid grey;
+}
+
